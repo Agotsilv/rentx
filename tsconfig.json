@@ -3,7 +3,7 @@
     "target": "es5",
     "module": "commonjs",
     "rootDir": "./",
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "outDir": "./dist",
     "esModuleInterop": true,
     "experimentalDecorators": true,
