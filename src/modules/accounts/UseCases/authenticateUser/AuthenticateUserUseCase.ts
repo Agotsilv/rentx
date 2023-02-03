@@ -1,4 +1,4 @@
-import { AppError } from './../../../../errors/AppError';
+import { AppError } from '../../../../shared/errors/AppError';
 import { IUserRepository } from '../../repositories/IUserRepository';
 import { injectable, inject } from 'tsyringe';
 import { compare } from 'bcryptjs';

@@ -1,6 +1,6 @@
-import { AppError } from './errors/AppError';
-import './database';
-import './shared/container';
+import { AppError } from '../../errors/AppError';
+import '../typeorm';
+import '../../container';
 import express, { NextFunction, Request, Response } from 'express';
 import 'express-async-errors';
 import { router } from './routes';
@@ -27,5 +27,6 @@ app.use(
 );
 
 app.listen(3333, () => {
+  // eslint-disable-next-line no-console
   console.log('Server is running!');
 });
