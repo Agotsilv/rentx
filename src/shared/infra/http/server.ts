@@ -1,10 +1,11 @@
 import { AppError } from '../../errors/AppError';
-import '../typeorm';
+import createConnection from '../typeorm';
 import '../../container';
 import express, { NextFunction, Request, Response } from 'express';
 import 'express-async-errors';
 import { router } from './routes';
 
+createConnection();
 const app = express();
 
 app.use(express.json());
